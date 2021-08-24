@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// 导入 react-virtualized 组件样式
+import 'react-virtualized/styles.css'
+// 导入全局样式
+import './index.css'
+// 导入字体图标库样式
+import './assets/fonts/iconfont.css'
+// 导入路由包裹配置
+import { BrowserRouter } from 'react-router-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>,document.getElementById('root'));

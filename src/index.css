@@ -1,13 +1,29 @@
-body {
+html,
+body{
+  height: 100%;
+  font-family: 'Microsoft YaHei';
+  color: #333;
+  background-color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+  /* 去掉 轮播图 Chrome浏览器的错误警告 */
+  touch-action: pan-y;
+}
+h2,
+h3,
+p,
+ul{
+  margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html,body,#root,.app{
+  height: 100%;
 }
